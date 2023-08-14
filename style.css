@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+.centered-box {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span{
+    margin: 0;
+  font-family: 'Alata', sans-serif;
+position: relative;
+
+ max-width: 300px;
+  position: relative;
+    z-index: 2;
+  width: fit-content;
+  padding: 2px;
+  text-align: left;
+}
+
+.animate-rotate {
+  animation: beatnrotate 1s infinite;
+}
+.centerbox{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: fit-content;
+  padding: 20px;
+  text-align: left;
+}
+h1{
+    margin: 0;
+  font-weight: 100;
+  font-size: 10vw;
+  font-family: 'alata', cursive;
+  position: relative;
+   z-index: 2;
+  
+  padding: 20px;
+  text-align: center;
+}
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+body {
+  background-color: gold;
+  overflow: hidden;
+min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+}
+@keyframes beatnrotate {
+  0% {
+    font-size: 40px;
+    /* fallback */
+    font-size: 7vh;
+     -webkit-transform: rotate(0deg);  
+  }
+  25% {
+    font-size: 1000px;
+    /* fallback */
+    font-size: 5vh;
+         -webkit-transform:rotate(20deg);  
+
+  }
+  50% {
+    font-size: 40px;
+    /* fallback */
+    font-size: 7vh;
+    -webkit-transform:rotate(0deg);
+  }
+  75% {
+    font-size: 1000px;
+    /* fallback */
+    font-size: 5vh;
+        -webkit-transform:rotate(-20deg);
+
+  }
+  100% {
+    font-size: 40px;
+    /* fallback */
+    font-size: 7vh;
+            -webkit-transform:rotate(0deg);
+
+  }
+}
+  #canvas{
+     background-color: #fffff;
+         width: 100%;
+    height:100%;
+    z-index: 0;
+  }
